@@ -1,0 +1,63 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Header Files\Data">
+      <UniqueIdentifier>{c4a11ce7-50b3-407c-a909-e01980e9795d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\BookManegar">
+      <UniqueIdentifier>{4aebfd3e-aa60-456d-aa6d-a03c9cc5cdad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\ClientManager">
+      <UniqueIdentifier>{50291fb1-977c-4d26-8059-7178507f7148}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\UserManager">
+      <UniqueIdentifier>{c1a0fd33-b9dd-40fa-9651-cf639a278de5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="BookManager.cpp">
+      <Filter>Header Files\BookManegar</Filter>
+    </ClCompile>
+    <ClCompile Include="ClienManager.cpp">
+      <Filter>Header Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="UserManager.cpp">
+      <Filter>Header Files\UserManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Books.hpp">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Users.hpp">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="Client.hpp">
+      <Filter>Header Files\Data</Filter>
+    </ClInclude>
+    <ClInclude Include="BookManager.hpp">
+      <Filter>Header Files\BookManegar</Filter>
+    </ClInclude>
+    <ClInclude Include="ClienManager.hpp">
+      <Filter>Header Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UserManager.hpp">
+      <Filter>Header Files\UserManager</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
