@@ -25,6 +25,9 @@
     <Filter Include="Header Files\UserManager">
       <UniqueIdentifier>{c1a0fd33-b9dd-40fa-9651-cf639a278de5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Header Files\InputHandel">
+      <UniqueIdentifier>{ddf649e8-331c-40c0-90ca-ce12e610c981}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -37,6 +40,18 @@
       <Filter>Header Files\ClientManager</Filter>
     </ClCompile>
     <ClCompile Include="UserManager.cpp">
+      <Filter>Header Files\UserManager</Filter>
+    </ClCompile>
+    <ClCompile Include="BookLogic.cpp">
+      <Filter>Header Files\BookManegar</Filter>
+    </ClCompile>
+    <ClCompile Include="Input.cpp">
+      <Filter>Header Files\InputHandel</Filter>
+    </ClCompile>
+    <ClCompile Include="ClientLogic.cpp">
+      <Filter>Header Files\ClientManager</Filter>
+    </ClCompile>
+    <ClCompile Include="UserLogic.cpp">
       <Filter>Header Files\UserManager</Filter>
     </ClCompile>
   </ItemGroup>
@@ -57,6 +72,18 @@
       <Filter>Header Files\ClientManager</Filter>
     </ClInclude>
     <ClInclude Include="UserManager.hpp">
+      <Filter>Header Files\UserManager</Filter>
+    </ClInclude>
+    <ClInclude Include="BookLogic.hpp">
+      <Filter>Header Files\BookManegar</Filter>
+    </ClInclude>
+    <ClInclude Include="Input.hpp">
+      <Filter>Header Files\InputHandel</Filter>
+    </ClInclude>
+    <ClInclude Include="ClientLogic.hpp">
+      <Filter>Header Files\ClientManager</Filter>
+    </ClInclude>
+    <ClInclude Include="UserLogic.hpp">
       <Filter>Header Files\UserManager</Filter>
     </ClInclude>
   </ItemGroup>

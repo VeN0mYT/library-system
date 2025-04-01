@@ -37,6 +37,7 @@ void ClientManager::DisplayClient(unsigned int id)
 	}
 }
 
+
 bool ClientManager::IsClientExist(unsigned int id)
 {
 	return clients.find(id) != clients.end();

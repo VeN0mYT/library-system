@@ -32,7 +32,10 @@ public:
 		std::cout << "Year: " << year << std::endl;
 		std::cout << "Name: " << name << std::endl;
 		std::cout << "Author: " << author << std::endl;
-		std::cout << "Is borrowed: " << isBorrowed << std::endl;
+		if(isBorrowed)
+		std::cout << "Is borrowed: " << "YES" << std::endl;
+		else
+		std::cout << "Is borrowed: " << "NO" << std::endl;
 	}
 
 };

@@ -130,7 +130,10 @@
     <ClCompile Include="BookLogic.cpp" />
     <ClCompile Include="BookManager.cpp" />
     <ClCompile Include="ClienManager.cpp" />
+    <ClCompile Include="ClientLogic.cpp" />
+    <ClCompile Include="Input.cpp" />
     <ClCompile Include="main.cpp" />
+    <ClCompile Include="UserLogic.cpp" />
     <ClCompile Include="UserManager.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -138,6 +141,9 @@
     <ClInclude Include="BookManager.hpp" />
     <ClInclude Include="ClienManager.hpp" />
     <ClInclude Include="BookLogic.hpp" />
+    <ClInclude Include="ClientLogic.hpp" />
+    <ClInclude Include="UserLogic.hpp" />
+    <ClInclude Include="Input.hpp" />
     <ClInclude Include="UserManager.hpp" />
     <ClInclude Include="Users.hpp" />
     <ClInclude Include="Client.hpp" />

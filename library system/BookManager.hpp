@@ -27,6 +27,8 @@ public:
 	void updateBook(Book book);
 	bool IsBookExist(unsigned int id) { return booksId.find(id) != booksId.end(); }
 	void DisplayBook(unsigned int id);
+
+	void DisplayByName(std::string name);
 	void SetMapBookId(std::unordered_map<int, Book> booksId) { this->booksId = booksId; }
 	void SetMapBookName(std::unordered_map<std::string, std::unordered_set<int>> booksName) { this->booksName = booksName; }
 	std::unordered_map<int, Book> GetMapBookId() { return booksId; }

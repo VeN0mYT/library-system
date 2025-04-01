@@ -1,38 +1,31 @@
 #include<iostream>
-#include"BookManager.hpp"
-#include"ClienManager.hpp"
-#include"UserManager.hpp"
+#include"BookLogic.hpp"
+#include"ClientLogic.hpp"
+#include"UserLogic.hpp"
 
-// why singelton ?
-// to have the map in one place can call it any where whout being copied by mistake or deleted in one class that cant be copied or deleted 
-// more control  more security
-// some details in bookmanager !!
+
 int main()
 {
-	/*
-	BookManager* bookmanager = BookManager::getInstance();  // getting the instance to the pointer so you can access the object from the pointer
+	BookManager* manage = BookManager::getInstance();
+	ClientManager* clientManager = ClientManager::getInstance();
+	UserManager* UserManager = UserManager::getInstance();
 
-	bookmanager->AddBook({ 5678, 2002, "C++" ,"abdo",false});
-	//bookmanager->AddBook({ 5678, 2002, "C++" ,"abdo",false});
-	bookmanager->AddBook({ 5646, 2002, "C++v2" ,"hesham",false});
-	bookmanager->DisplayBook(5678);
-	BookManager* bookmanager2 = BookManager::getInstance();		// that pointer will point to the same object same data no new copy will be created
-	bookmanager2->updateBook({ 5678, 2045, "C++" ,"lolbo",false});
-	bookmanager2->DisplayBook(5678);
-	*/
-	/*
-	ClientManager* clientmanager = ClientManager::getInstance();
-	clientmanager->AddClient({ 56,13456789,"abdo", {"she","bo","ya"} });
-	clientmanager->DisplayClient(56);
-	clientmanager->UpdateClient({ 56,13456789,"abyadwao", {"she","bo","ya"} });
-	clientmanager->DisplayClient(56);
-	*/
-	/*
-	UserManager* usermanager = UserManager::getInstance();
-	usermanager->AddUser({ 56,13456789,"abdo" });
-	usermanager->DisplayUser(56);
-	usermanager->UpdateUser({ 56,13456789,"abbdro" });
-	usermanager->DisplayUser(56);
-	*/
+	manage->AddBook({ 1, 2020, "The Alchemist", "Paulo Coelho", false });
+	manage->AddBook({ 2, 2620, "The Alchemist", "Palo4689 Colho", true });
+	manage->AddBook({ 3, 20240, "The Alchemist", "8789aulo Coelho", false });
+	//UpdateBook();
+	//manage->DisplayByName("The Alchemist");
+	clientManager->AddClient({ 1,"0123456789","ahmed",{"street","city","state" } });
+	clientManager->AddClient({ 2,"0123456789","ahmed",{"street","city","state"} });
+	//UpdateClient();
+
+	//DisplayBook();
+	//DisplayClient();
+	
+	UserManager->AddUser({ 1,"0123456789","ahmed" });
+	UserManager->AddUser({ 2,"0123456789","ahmed" });
+	//UpdateUser();
+	//DisplayUser();
+
 	return 0;
 }

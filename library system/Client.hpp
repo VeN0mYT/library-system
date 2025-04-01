@@ -22,18 +22,18 @@ class Client
 {
 private:
 	unsigned int id = 0;
-	unsigned int phone = 0;
+	std::string phone;
 	std::string name;
 	Address address;
 public:
-	Client(unsigned int id = 0, unsigned int phone = 0, std::string name = "unknown", Address address = Address()) :id(id), phone(phone), name(name), address(address) {}
+	Client(unsigned int id = 0, std::string phone = "unknown", std::string name = "unknown", Address address = Address()) :id(id), phone(phone), name(name), address(address) {}
 	void SetId(unsigned int id) { this->id = id; }
 	void SetPhone(unsigned int phone) { this->phone = phone; }
 	void SetName(std::string name) { this->name = name; }
 	void SetAddress(Address address) { this->address = address; }
 
 	unsigned int GetId() { return id; }
-	unsigned int GetPhone() { return phone; }
+	std::string GetPhone() { return phone; }
 	std::string GetName() { return name; }
 	Address GetAddress() { return address; }
 

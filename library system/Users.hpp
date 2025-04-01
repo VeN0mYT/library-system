@@ -6,14 +6,14 @@ class Users
 {
 private:
 	unsigned int id = 0;
-	unsigned int phone = 0;
+	std::string phone;
 	std::string name = "";
 public:
 	Users() = default;
-	Users(unsigned int id, unsigned int phone, std::string name)
+	Users(unsigned int id, std::string Phone = "unkown", std::string name = "unkown")
 	{
 		this->id = id;
-		this->phone = phone;
+		this->phone = Phone;
 		this->name = name;
 	}
 	void SetId(unsigned int id)
@@ -33,7 +33,7 @@ public:
 	{
 		return this->id;
 	}
-	unsigned int GetPhone()
+	std::string GetPhone()
 	{
 		return this->phone;
 	}

@@ -29,6 +29,7 @@ public:
 
 	void DisplayClient(unsigned int id);
 
+
 	bool IsClientExist(unsigned int id);
 	
 

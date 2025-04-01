@@ -28,3 +28,16 @@ void BookManager::DisplayBook(unsigned int id)
 	}
 	booksId[id].PrintInfo();
 }
+
+void BookManager::DisplayByName(std::string name)
+{
+	if(booksName.find(name)==booksName.end())
+	{
+		std::cout<<"Book Name not found"<<std::endl;
+		return;
+	}
+	for(auto it=booksName[name].begin();it!=booksName[name].end();it++)
+	{
+		booksId[*it].PrintInfo();
+	}
+}
